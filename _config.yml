@@ -26,6 +26,7 @@ exclude:
   - tmp
 
 destination: _output
+markdown_ext: md,mdd
 
 collections:
   definitions:
