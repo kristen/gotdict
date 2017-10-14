@@ -5,3 +5,4 @@ bin/kindlegen
 vendor/bundle
 .sass-cache
 .jekyll-metadata
+.idea/

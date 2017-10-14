@@ -45,5 +45,8 @@ DEPENDENCIES
   jekyll-coffeescript
   rake
 
+RUBY VERSION
+   ruby 2.1.2p95
+
 BUNDLED WITH
-   1.10.6
+   1.15.4

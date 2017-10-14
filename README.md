@@ -35,13 +35,22 @@ Other files are used in the generation of the MOBI file.
 
 The [Jekyll](https://jekyllrb.com) static site generator is used to build the dictionary which is then passed to kindlegen to be converted into a MOBI file.
 
-You will need a [Ruby](https://www.ruby-lang.org/) environment with [bundler](http://bundler.io/) and the kindlegen executable from Amazon. The following will get you this on a Linux box:
+You will need a [Ruby](https://www.ruby-lang.org/) environment with [bundler](http://bundler.io/) and the [kindlegen](https://kindlegen.s3.amazonaws.com/Readme.txt) executable from Amazon. The following will get you this on a Linux box:
 
+linux
 ```
 bundle install
 mkdir -p bin tmp/kindlegen
 curl http://kindlegen.s3.amazonaws.com/kindlegen_linux_2.6_i386_v2_9.tar.gz > tmp/kindlegen.tar.gz
 tar zxvf tmp/kindlegen.tar.gz -C tmp/kindlegen
+mv tmp/kindlegen/kindlegen bin/
+```
+mac
+```
+bundle install
+mkdir -p tmp/kindlegen
+curl http://kindlegen.s3.amazonaws.com/KindleGen_Mac_i386_v2_9.zip > tmp/kindlegen.zip
+unzip tmp/kindlegen.zip -d tmp/kindlegen
 mv tmp/kindlegen/kindlegen bin/
 ```
 
